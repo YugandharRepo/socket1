@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000", // your frontend URL
+    origin: "http://43.205.43.29:3000", // your frontend URL
     methods: ["GET", "POST"],
   },
 });
@@ -30,5 +30,5 @@ io.on("connection", (socket) => {
 
 
 server.listen(3001, () => {
-  console.log("Server running on http://localhost:3001");
+  console.log("Server running on 3001");
 });
